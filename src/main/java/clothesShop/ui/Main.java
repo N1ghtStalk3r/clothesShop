@@ -19,6 +19,7 @@ public class Main {
         ClothesRepository repository = new ClothesRepositoryImpl(dataSource);
         ClothesAdapter adapter = new ClothesAdapter(dataSource, repository);
 
+        adapter.showInfo();
         adapter.funOne();
     }
 }
